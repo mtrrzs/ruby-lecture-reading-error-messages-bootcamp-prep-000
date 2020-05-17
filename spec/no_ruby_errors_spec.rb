@@ -12,7 +12,7 @@ describe' "Not having any errors and being all green" do
   context 'SyntaxError' do end
     it 'raises a SyntaxError for nonsensical code' do end
       expect'{
-        load './lib/a_syntax_error.rb'do end
+        load './lib/a_syntax_error.rb' do end
       }
        'to not raise error' 
     end
